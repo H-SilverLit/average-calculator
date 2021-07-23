@@ -11,7 +11,7 @@ public class Application {
             try {
                 int input = Integer.parseInt(scanner.nextLine());
 
-                if (input == 0) {
+                if (input == 0) { // El programa te deja introducir todos los números que quieras, pero si introduces un '0' entonces se acaba y te calcula la media de todos los números introducidos.
                     System.out.println("La media de tus números es " + (sum / totalNumbers + "."));
                     break;
                 }
@@ -21,7 +21,7 @@ public class Application {
                 System.out.println("Introduce otro número.");
             }
 
-            catch (NumberFormatException e) {
+            catch (NumberFormatException e) { // Esto hace que solo puedas introducir números en formato integer.
                 System.out.println("Introduce un número válido.");
             }
         }
